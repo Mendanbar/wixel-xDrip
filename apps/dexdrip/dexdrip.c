@@ -136,9 +136,9 @@ void setADCInputs ();
 #ifndef CUSTOM_TRANSMITTER_ID
 #warning "Using built-in transmitter id and defines from dexdrip.c"
 
-static CODE const char transmitter_id[] = "ABCDE";                                               //
+static CODE const char transmitter_id[] = "6L8NR";                                               //
 
-#define my_webservice_url	"parakeet-receiver.appspot.com/receiver.cgi"
+#define my_webservice_url	"wixel-receiver.appspot.com/receiver.cgi"
 #define my_webservice_reply     "!ACK"
 #define my_user_agent 		"xDrip"
 #define my_gprs_apn		"apn.check.your.carrier.info"
