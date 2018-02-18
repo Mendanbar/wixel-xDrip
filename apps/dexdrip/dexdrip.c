@@ -167,7 +167,7 @@ static volatile BIT allow_alternate_usb_protocol = 1;
 // if set to 1 and plugged in to USB then protocol output is suitable for dexterity and similar
 
 // set use_gsm to 0 if you want to use parakeet codebase as USB/Wifi Wixel
-static volatile BIT use_gsm = 1;
+static volatile BIT use_gsm = 0;
 //                                                                                                  //
 //..................................................................................................//
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -180,11 +180,11 @@ static volatile BIT use_gsm = 1;
 //                                   1 = TRUE       0 = FALSE                                       //
 //                                                                                                  //
 //                                                                                                  //
-static volatile uint8 wake_earlier_for_next_miss = 20;	//
+static volatile uint8 wake_earlier_for_next_miss = 40;	//
 // if a packet is missed, wake this many seconds earlier to try and get the next one                //
 // shorter means better bettery life but more likely to miss multiple packets in a row              //
 //                                                                                                  //
-static volatile uint8 misses_until_failure = 2;	//
+static volatile uint8 misses_until_failure = 0;	//
 // after how many missed packets should we just start a nonstop scan?                               //
 // a high value is better for conserving batter life if you go out of wixel range a lot             //
 // but it could also mean missing packets for MUCH longer periods of time                           //
