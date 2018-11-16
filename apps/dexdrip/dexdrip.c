@@ -136,7 +136,7 @@ void setADCInputs ();
 #ifndef CUSTOM_TRANSMITTER_ID
 #warning "Using built-in transmitter id and defines from dexdrip.c"
 
-static CODE const char transmitter_id[] = "6L8NR";                                               //
+static CODE const char transmitter_id[] = "6NA3L";                                               //
 
 #define my_webservice_url	"wixel-receiver.appspot.com/receiver.cgi"
 #define my_webservice_reply     "!ACK"
